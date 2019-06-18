@@ -7,4 +7,12 @@ public class Thing {
         this.cost = cost;
         this.weight = weight;
     }
+
+    public int getCost() {
+        return cost;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
 }

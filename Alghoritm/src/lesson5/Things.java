@@ -9,10 +9,14 @@ public class Things {
         Random rand = new Random();
         for (int i = 0; i < count; i++) {
             arr[i] = new Thing(rand.nextInt(maxCost), rand.nextInt(maxWeight));
+            System.out.println("стоимость " + arr[i].getCost() + " вес " + arr[i].getWeight());
         }
     }
 
     public Thing[] getArr() {
         return arr;
+    }
+    public void setArrCost(int k){
+        arr[k] = null;
     }
 }
