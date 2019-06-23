@@ -35,7 +35,7 @@ public class Graph {
 
     public int getUnvisitedPoint(int key){
         for (int i = 0; i < size; i++) {
-            if(margin[key][i] == 1 && !points[i].visited){
+            if(margin[i][key] == 1 && !points[i].visited){
                 return i;
             }
         }
